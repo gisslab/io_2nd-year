@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[margin=1.05 in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}   % loads »amsmath«
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{cancel}
+%\usepackage{graphics}
+\usepackage{graphicx}
+%others
+\usepackage{enumerate}
+\usepackage{subcaption}
+
+
+
+\usepackage{apacite}
+\usepackage[round]{natbib}
+%\bibliographystyle{plainnat}
+\bibliographystyle{apacite}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\setlength{\parskip}{0.4em}
+\usepackage{setspace}
+\singlespacing
+%\spacing{1.2}
+
+
+
+\newtheorem{defin}{Definition.}
+\newtheorem{teo}{Theorem. }
+\newtheorem{lema}{Lemma. }
+\newtheorem{coro}{Corolary. }
+\newtheorem{prop}{Proposition. }
+\theoremstyle{definition}
+\newtheorem{examp}{Example. }
+\newtheorem{problem}{}
+
+
+\title{Literature review: price dispersion on the banking industry}
+\author{Giselle Labrador Badia}
+\date{December 2021}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Risk based pricing as a determinant of price dispersion}}
+
+\section*{Price discrimination as a determinant of price dispersion}
+
+\subsection*{\cite{allen2014effect}}
+\begin{itemize}
+    \item Motivation: \\Disentangle sources of price dispersion in markets where prices are determined by a negotiation process. The two main possible sources of price dispersion are risk-based pricing (adverse selection or borrowers sorting by risk level), and price discrimination, which is the focus of this paper. By price discrimination, the authors mean prices that reflect the bargaining leverage of consumers rather than lending cost alone. 
+    
+    \item Objectives / Research Question:\\ The objectives are to document price dispersion in the mortgage market, to identify groups of consumers who benefit from banks' discounting policies, and to weigh how much of this price dispersion is due to price discrimination. 
+    
+    \item Data: \\Canadian insured mortgage contracts obtained from CMHC and Genworth from 1999 to 2004. 
+    
+    \item Empirical strategy: \\     The authors develop two price discrimination tests. The first one is based on quantile regression by controlling for characteristics that affect profitability, the conditional rate distribution must reflect the remaining heterogeneity in negotiation ability. The second one compares marginal effects across brokers and no brokers. 
+    
+    \item Results: \\They find evidence of price dispersion and an increase in average discount negotiated.  They identify market and consumers characteristics for which rates vary, such as network size, market concentration, new home buyers, financial constraints, and credit risk.  Both tests suggest the presence of price discrimination in the market. 
+    
+    \item Contribution: \\Policy implications on regulation of mortgage markets. Competition is consumer-specific, so policies that aim to improve transparency and financial literacy will help borrowers with low negotiation ability and high search costs. On the other hand, policies with the purpose of increasing competition will mainly increase the welfare of consumers with high financial literacy and low search cost.   
+    \item Future work: Ambiguous prediction on welfare, hence attempt to quantify the welfare impact of different policies will be a natural step (next paper). 
+    \item Critiques: This work does not quantify but describes the importance of price dispersion. Something about methodology?
+\end{itemize}
+\subsection*{\cite{allen2019search}}
+
+\begin{itemize}
+    \item Motivation: \\ Authors are interested in features of markets where prices are decided via bilateral bargaining: search frictions and brand loyalty. The former trait leads to price discrimination by the seller while the latter lessens the negotiation leverage of buyers, and together they contribute to incumbency advantage. 
+    
+    \item Objectives / Research Question:\\ What is the effect of search frictions on consumer welfare? What are the sources and magnitude of market power? (textual)
+    
+    \item Data: \\Canadian insured mortgage contracts obtained from CMHC and Genworth from 1999 to 2002 (terms of contracts, loan size, house price, additionally FICO, borrower income, etc). 
+    
+    \item Empirical strategy: \\Develop and estimate a structural model that consists of a two-stage game of bargaining and search where the home bank makes a take-it-or-leave-it offer and if rejected consumer search and local lenders compete via English auction. 
+
+    
+    \item Results: \\ They quantify borrowers' search cost (\$1170) and incumbent bank cost advantage from loyal costumers (\$17 per month for \$100000 loan). They find that search frictions reduce consumer surplus by \$12 a month per consumer. By performing counterfactual exercises they are able to disentangle the cause of surplus loss: (i) inefficient matching, 22 percent; (ii) price discrimination, 28 percent, (iii) direct searching cost, 50 percent. The incumbency advantage is evidenced by a 70 percent higher margin for banks with large consumer bases, which is the result mainly of brand loyalty and in a small part because of price discrimination due to search frictions.
+    
+    \item Contribution: Develop a framework in which buyer negotiate prices with many differentiated sellers and only transaction prices with the chosen seller is observed. In complete-information multilateral negotiation game literature, the method to measure the buyer's outside option is not applicable when buyers contract with a single seller, like in this paper. In the search literature, this paper contributes by focusing on tarted bargained prices as opposed to posted prices. Quantify the sources of incumbency advantage: brand loyalty and ability to price discriminate. 
+    
+    \item Future work: 
+    
+    \item Critiques: 
+    
+    \end{itemize}
+
+\subsection*{\cite{stango2016borrowing}}
+
+\begin{itemize}
+    \item Motivation: \\ Finding out what policies and third-party products help consumers to minimize borrowing search costs.  
+    
+    \item Objectives / Research Question:\\ Identifying key elements of consumer and lender behavior related to borrowing cost minimization. (textual)
+    
+    \item Data: \\ Rich transaction-level administrative data, credit bureau, and survey data on a panel of 4312 consumers from 2006-2008 in the U.S. credit card market. 
+    
+    \item Empirical strategy: \\ Using IV (demographic "protected characteristics" as an instrument for search intensity) to estimate borrowing cost by type of shopper, and estimating then the lowers APRs in the market to find how much individuals could save by paying this rate. 
+
+    
+    \item Results: \\  Show that there is dispersion in APRs of credit cards (novel contribution in the industry). 
+    Most active shoppers pay several hundred basis points less than nonshoppers. 
+    
+    \item Contribution: Documenting price dispersion in the credit market.  Identifying channels through which supply-side and demand-side result in price dispersion; this is different from risk-based pricing models.
+    
+    \item Future work: 
+    
+    \item Critiques: 
+\end{itemize}
+
+
+\subsection*{\cite{agarwal2020searching}}
+   \begin{itemize}
+   \item Motivation: \\ Credit markets exhibit considerably price dispersion and consumer search is one of the main explanations, however, search is rarely observed in the data but it is inferred from price dispersion. 
+    
+    \item Objectives / Research Question:\\ Since credit provider's profits depend on the ability of their  customers to repay their loans, there is an approval process. This paper seeks to incorporate this approval process into the application process and studying its interaction with search. 
+    
+    \item Data: \\  United States mortgage panel from government sponsored entity GSE and consumer credit reports. 
+    
+    \item Empirical strategy: \\ Model that combines search and screening in the presence of asymmetric information.
+    
+    \item Results: \\  Novel non-monotonic relationship between prices and search: borrowers who search more obtain more expensive mortgages. This can be explained by screening by lenders and borrowers internalizing their low creditworthiness and behaving as if they had high search cost. The process also generates endogenous adverse selection  The estimation and counterfactual suggest that over-payment is not a good proxy for consumer unsophistication.
+    
+    \item Contribution: Critiques central idea in identification of search costs (\cite{hortaccsu2004product}, \cite{allen2014effect}) (textual). Highlights importance of approval process in understanding consumer search for credit products. 
+    
+    \item Future work: 
+    
+    \item Critiques: But even after ideally controlling for creditworthiness, income, etc, you should be let with consumer unsophistication; this is the claim of most of the literature, that is not exactly what they imply. 
+    
+    \end{itemize}
+
+\subsection*{\cite{galenianos2020regulatory}}
+   \begin{itemize}
+   \item Motivation: \\ 
+    
+    \item Objectives / Research Question:\\
+    
+    \item Data: \\ 
+    
+    \item Empirical strategy: \\ 
+
+    
+    \item Results: \\  
+    
+    \item Contribution:
+    
+    \item Future work: 
+    
+    \item Critiques: 
+    
+    \end{itemize}
+
+
+
+\bibliography{lit_references.bib}
+
+\end{document}

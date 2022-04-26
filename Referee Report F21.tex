@@ -1,0 +1,149 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[margin=1.1 in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}   % loads »amsmath«
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{cancel}
+%\usepackage{graphics}
+\usepackage{graphicx}
+%others
+\usepackage{enumerate}
+\usepackage{subcaption}
+
+
+
+\usepackage{apacite}
+\usepackage[round]{natbib}
+%\bibliographystyle{plainnat}
+\bibliographystyle{apacite}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\setlength{\parskip}{0.8em}
+\usepackage{setspace}
+\singlespacing
+%\spacing{1.2}
+
+
+
+\newtheorem{defin}{Definition.}
+\newtheorem{teo}{Theorem. }
+\newtheorem{lema}{Lemma. }
+\newtheorem{coro}{Corolary. }
+\newtheorem{prop}{Proposition. }
+\theoremstyle{definition}
+\newtheorem{examp}{Example. }
+\newtheorem{problem}{}
+
+
+\title{Referee Report on Strategic Entry Deterrence and the Behavior of Pharmaceutical Incumbents Prior to Patent Expiration (\cite{ellison2011strategic})}
+\author{Giselle Labrador Badia}
+\date{December 2021}
+
+\begin{document}
+
+\maketitle
+
+\section*{Overview}
+
+This paper proposes a new empirical approach to testing for strategic entry deterrence. The more common strategic investments recognized in the industrial organization literature are excess capacity, capital structure, advertising, contractual practices, pricing, and others. The main motivation of this work is the scarce number of empirical papers about strategic investments to preclude entry. The objective of this paper is to answer whether or not there is strategic entry deterrence in an industry by developing a novel empirical test, which is its main contribution.  
+
+With this aim, the authors develop a theoretical model of strategic entry-deterrence, with two versions, one in which firms have an entry-deterrence motive and one in which firms do not. They identify a prediction of the theory that diverges in these two scenarios: there is a non-monotonic relationship between equilibrium investment levels and market size. That is, incentives to deter entry are weak in small markets, become stronger in  intermediate-sized markets, and are small again in very large markets. In other words, as the market size grows the optimal strategic investments are monotone if firms do not invest to discourage entry, and non-monotone when there are entry-deterrence motives. This implies that if you have data on strategic investment from different market sizes, you can examine the monotonicity patterns and determine whether or not firms in the industry take strategic entry deterrence into account. It is important to point out that this monotonicity result will only be true under certain conditions that I will discuss later. 
+
+The authors applied this method to the pharmaceutical industry to study the behavior of incumbents before patent expiration. They used a panel data of drugs that lost US patent protection during 1986 and 1992 to examine pharmaceutical incumbents' responses to generic entry threats.  The strategic investments the authors consider are incumbents' advertising, product proliferation (different packages and presentation of drugs) and pricing decisions as patent protection demise approaches. This paper contributes to the literature of empirical testing with two monotonicity tests, both for increasing and decreasing functions. Furthermore, having data of actions many years before patent expiration, they can implement a difference-in-differences version of the test. In the pharmaceutical application, they find some evidence that incumbents in medium-sized markets reduce advertising prior to patent expiration. The evidence of entry deterrence behavior is not very strong for pricing, product proliferation, or even for advertising, especially journal advertising (i.e advertising in medical journals). 
+
+The paper contributes to the empirical literature on strategic deterrence with a structural test, which has been seen as difficult before. It also contributes to a strand of the empirical literature on pricing, advertising, and entry in the pharmaceutical industry. 
+
+
+\subsection*{Model}
+
+This paper modifies the prototypical model of strategic entry deterrence, by assuming entry costs are stochastic and thus the incumbent will not know for sure whether entry will occur when choosing investment. The classical entry deterrence model is a three-stage game. In the first period, the incumbent makes a costly investment level decision. In the second stage, the entrant observes the incumbent's choice of investment and makes an entry decision which implies a sunk cost. In the third stage, if there was no entry, the monopolist decides quantities, and if there was entry, the two firms compete as duopolists. In the previously outlined version of the model, since the potential entrant observes the investment decision of the incumbent, the investment serves as a tool to hamper entry. If we consider a model in which before making the entry decision, the entrant does not observe the investment level, this investment cannot have an entry deterrence purpose. These two models are the benchmarks for comparing and evaluating incumbent behavior when there are entry deterrence intentions and when there are non.
+
+Their approach is to identify under which assumptions these two models make different predictions. With this purpose, they solve the optimality conditions of these two settings and define a direct effect and a competition effect. An essential theoretical result is that if these two aforementioned effects go in the same direction there is monotonicity in the no entry-deterrence equilibrium. One way to interpret this result is that if the conditions over the direct and competition effect hold, and we see non-monotonic behavior this means that the incumbent was influenced by entry-deterrence motives. Therefore, this is the theoretical result that is key to addressing the entry deterrence question. The addition of the stochastic sunk cost is what allows the model to answer this question, and that will be crucial in the empirical strategy. Next, several theoretical examples related to the pharmaceutical application are provided to build intuition about the main result and to later be used in the empirical application. 
+
+\subsection*{Econometric tests}
+
+The theoretical results inform the econometric implementation of the test. More formally, the null hypothesis for the test is that investments are not influenced by the strategic entry-deterrence motive, i.e. that the investment-market size relationship is monotone. The authors propose two tests for monotonicity, the first one consists of a minor modification of \cite{hall2000testing} whose idea is that there should be only very small intervals of the observations that appear to be decreasing when the relation is monotone increasing.  The second test is a new statistic that assesses how well the data can be fitted by a monotone function. There are several potential issues with this empirical approach. The authors discuss the possible measurement errors that can come up when there are imperfect proxies for market size (e.g. population, total revenue). They are not too worried about this issue, and they proceed by giving regularity conditions for the proxy under which measurement errors are not a significant impediment. A more severe concern is the endogeneity of proxies for market sizes, such as total revenue before the patent expiration that could be correlated with the potential consumers and their willingness to pay as well as with investments. They alleviate this potential issue again by proposing conditions under which the proxy yields a monotone investment. 
+\cite{ellison2011strategic} also present an IV approach to temper the endogeneity concern, although they confess that there are no compelling instruments for their application. 
+
+\subsection*{Data}
+
+This paper uses panel data of the pharmaceutical industry from 1986 to 1992.  Before 1984, most drugs tended to retain their monopoly position, but the were changes in 1984 that diminish regulatory barriers to generic entry. One of the investments that they use as possible tools pharmaceutical firms alter in order to preclude entry is advertising. They distinguish between two types of advertising: detail advertising, which is when sales representatives visit doctors; and journal advertising that is placement of advertising in journals and publications read by doctors. A second potential tool is presentation proliferation, such a large number of presentations by package and milligram a tablet is sold, which makes it more costly for an entrant to reproduce the incumbent's product line. Moreover, substitution across presentations is low, since pharmacists dispense the exact prescription that the doctor recommended. Finally, the firms might employ pricing to preclude entry. The data includes average wholesale prices for hospitals and drugstore purchases. 
+
+The dataset contains 63 chemical compounds sold under 71 brand names that lost patent protection or FDA exclusivity between 1986 and 1992. It is worth mentioning that the number of observations is very small, which tarnishes the empirical findings. The authors present descriptive statistics of the main variables (entry, revenue, detailed and journal advertising, prices, etc). Because different drugs have different numbers of patients for which the drug has a therapeutic effect, variation in the market size is expected and the data is in this sense appropriate. The proxy used for the market size is total revenues. Since there is huge variation between revenues across drugs i.e. small, intermediate, and large market sizes, it should be possible to identify whether monotonicity holds in the industry.   The authors divide revenue into five revenue-based categories,  where the smallest quintile has the smallest market by revenues. Revenue can be seen as the probability that entry occurs in these markets, thus, the authors present evidence of the clear pattern and correlation between revenue and entry. As I mentioned before, there is concern about the endogeneity that comes with using total revenues as a proxy for market size; more on this later. Overall, the industry and the patent expiration circumstance is appropriate to get data that suits the model, but I am unease about the small sample and the possible endogeneity.
+
+
+
+\subsection*{Analysis}
+
+The authors first examine the data on detailed advertising, journal advertising, and presentation proliferation. They also discuss the theoretical assumptions that justify the monotonicity test for each of these investments. Detail advertising is more costly the larger the market, since the more prevalent a medical condition is, the more doctors the representatives need to visit. Moreover, advertising has a spillover effect, that is, doctors should expect that if a drug is appropriate for a patient, the generic counterpart is as well. In summary, one should expect that the advertising-to-market size ratio is monotonically decreasing in market size if firms are not motivated by strategic entry-deterrence. This is the case in which the strategic investment is to decrease advertising (playing-dead strategy) by reducing demand for the drug and making entry less attractive. The analysis of the quintiles and regression indicates that there is an apparent non-monotonicity. However, the coefficients for the regression of advertising-to-sales ratio on revenue and other covariates are nonsignificant and small. This is relevant since these linear regression coefficients are used to assess monotonicity. The two tests give opposite results,  \cite{hall2000testing} version of the test does not reject monotonicity while the author's proposed test does. The noise and small size of the data set might be why the results are non-conclusive. Another possible culprit is that the model might be not the most appropriate to describe this application. 
+
+Similarly, journal revenue assumptions are discussed and motivated; however, the competition and direct effects go in opposite directions since the cost per potential patient should be decreasing. This means that the main theoretical result that assures monotonicity when there is no influence of strategic entry motives cannot be applied.  For this reason, journal advertising is a less promising application to test. Another argument that points out that this case is less attractive is that expenditures on journal advertising tend to be way lower than on journal advertising. Nonetheless, economic analysis tells us that the expected strategic distortion should be a decline in advertising. The quintiles analysis suggests that there appears to be monotonicity in the market. The two tests yield reversed results, \cite{hall2000testing} version of the test rejects monotonicity while the author's proposed test does not. Again, I found these results discouraging regarding the tests, and the evidence of monotonicity strikes me as weak. 
+
+The final incumbent possible distortion that is tested using the first two monotonicity tests is presentation proliferation. Like in previous cases, the application is discussed. The paper's findings are that there is no indication of non-monotonicity and the two test results do not reject monotonicity. Although one should expect strategic behavior, in this case, these results suggest that the direct effect of market size is strong which reduces the power of the test to detect strategic deterrence. 
+
+
+Finally, the authors propose a difference-in-difference approach using that entry is prohibited until patent protection expires. A new instrument is considered for this version of the test: strategic pricing. There is some evidence of a non-monotonic relation in the quintile analysis, but both tests find it non-significant. Drugs with zero advertising and single presentation in the two years compared are dropped, which reduces the number of observations even further. The results are nonconclusive for detailed advertising, most likely because there are only a few observations. For journal observations and presentation proliferation, non-monotone evidence is found using both tests, although the non-monotonicity pattern does not match the theory (it has the opposite sign).
+
+\section*{Critiques and Comments}
+
+The following are comments both about the strength and weaknesses of the paper, as well as suggestions for improvement. 
+\begin{enumerate}
+    \item There are several examples of different applications given across the paper that are very useful to understand the different assumptions, functional forms, and investment tools to which this theory might be applied. For instance, example 1 is a model of advertising with spillovers, where the competition and direct effect go in the same direction. Graphs and reduced form solutions are provided, where it is clear the different behavior of a firm when facing a generic entry threat, that is, incumbents in medium-size markets will reduce advertising to preclude entry. You can see the non-monotonic relationship between advertising and market size, which makes this example illustrative of the result. This theoretical case is tested using the pharmaceutical data on advertising in subsequent sections. 
+    
+    \item The competition and the direct effect are defined and no previous explanation or intuition about where they come from is given. It is understood later, that these definitions are necessary for the assumptions of the main result, but the lack of a logical explanation of these concepts leaves the reader confused about their origin and significance. 
+    
+    \item The non-monotonic result has strong assumptions, it requires that both the direct effect and the competition effect go in the same direction. In many applications, including some in the paper, these restrictive conditions are not met. The authors still carry the analysis in those cases, maybe because the choice of the model might be incorrect, in which case the test says something about investment decisions and entry-deterrence. Furthermore, these are sufficient conditions, but not necessary conditions. This means that even when these conditions do not hold, we could still see those patterns. Then it might make sense to examine the patterns and try to find alternative explanations. The theory in this paper is insufficient to inform and evaluate those cases. Overall, these considerations weaken the number of applications and the robustness of the interpretation of the results.
+    
+    %\item Even when the monotonicity assumptions hold (about direct and competition effects).
+\item Unfortunately, the application studied in this paper does not give us significant, conclusive, or sometimes even coherent results. This could be due to the small number of observations and noise in the data, or because the proxy for the market size is endogenous. Although the test is promising, the empirical findings are disappointing. 
+    
+    \item There is no formal proof of extension of the existing econometric results for the monotonicity tests proposed. This formal proof will validate that the procedure is well-founded in this setup. They conduct simulations and obtained critical values via bootstraps values. However, it will be useful to extend the theoretical results of \cite{hall2000testing}, which turns to be difficult because the monotonicity test should work both for increasing and decreasing functions, and because investment is discrete in some applications. There is no extension or formal proof of the validity of the second test they proposed either. It will also be stronger if there was a parametric version of this monotonicity test. This could be especially useful since the number of observations in the applications is considerably small. 
+    
+    \item I believe that the endogeneity issue is a serious consideration. The proposition they present to mitigate the endogeneity concerns is only valid when investment is monotone increasing in market size, which is discouraging since even in one of their most important applications, investment is decreasing in market size. Moreover, they use total revenue as a proxy in the econometric application of the pharmaceutical industry, and this variable is likely endogenous since more investment increases revenue. 
+    
+    \item The authors claim that there is no reason why the fixed cost of developing a drug should be heterogeneous or correlated. They do not offer any type of intuition, inside information from the industry, or test that substantiates this claim. You could think that drugs in the same category have similar or even shared fixed costs and that some drugs can be more costly than others. So, this argument is not evident. This is fundamental to justify revenues as an adequate proxy of market size.
+\end{enumerate}
+
+\section*{Evaluation: Revise and Resubmit}
+This is a paper about testing strategic entry deterrence. Its main contribution is the empirical approach to examining strategic entry-deterrence theories. Given the difficulty of structural empirical methods in this area, there are not many works in this strand of the literature, so this paper is valuable because it advances the field in this direction. It also contributes to the literature on pricing, investment, and advertising in the pharmaceutical industry. From an econometrics perspective, it makes progress by developing tools for applied work, in particular new monotonicity tests. 
+
+The model is rather simple and has strong assumptions, and the theoretical results are not solid and applicable in many instances. Hence, I am skeptical about believing the theoretical results.  Nonetheless, we have learned that predictions about entry-deterrence motives, can be made using a simple model, and that monotonicity conditions might play a role in detecting strategic investment. It does not help that the data might not be adequate to show the worth of the theoretical results, hence more empirical work in this line might allow us to make better judgments about its value.
+
+Below, I summarize the main critiques of the paper:   
+
+\subsubsection*{Major comments}
+
+\begin{itemize}
+
+    \item I believe that given the contradictory, not very significant empirical results, the authors should not claim that they find non-monotonic patterns consistent with the theory, particularly in advertising. This is misleading since the different tests and different approaches give opposite results, so the non-monotonic pattern is not obvious. I think that the authors should rewrite the statements that are present in the abstract, introduction, and conclusions. 
+    
+    \item The restrictive assumption for the non-monotonicity restriction and the fact that this is only a sufficient condition difficult for the application of these results. Moreover, the impact of this monotonicity test is also lessened because of this. 
+    
+    \item Endogeneity of the market size proxy is a serious concern. Although there are theoretical results aimed to mitigate it, more should be commented about this for the particular application to the pharmaceutical industry. Endogeneity tests or arguments about why they are not necessary should be included. Presenting a version with an instrument for revenues would be another plausible solution. 
+    
+    \end{itemize}
+\subsubsection*{Minor comments}
+\begin{itemize}
+    \item A more detailed explanation about the two different effects (competition) could help the reader to gain intuition about the main theoretical result. Applications of this result to different industries and types of investment are only possible if these two effects are better understood. 
+    
+    \item The authors should discuss in more detail the claim about why the fixed cost of different drugs is not heterogeneous or correlated. 
+\end{itemize}
+
+Although there are certain limitations of the theoretical results that restrain the spectrum of applications, as well as some issues with the empirical application to the pharmaceutical industry, I believe that this is a valuable and relevant paper. Moreover,  I do not find any serious concern about the theory, data, structure, or content of this paper that made me apprehensive about publishing this work. Nevertheless, the issues previously outlined must be satisfactorily addressed. For all the previous reasons I recommend that this paper be revised and resubmitted,  and this process is guided by changes suggested in the report. 
+
+Respectfully,
+
+%\hspace{2cm}
+
+Giselle Labrador Badia
+(Referee)
+\bibliography{references.bib}
+\end{document}
